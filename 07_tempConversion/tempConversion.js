@@ -1,4 +1,6 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(farenheitValue) {
+  let tempInCelsius = (farenheitValue - 32) * (5 / 9);
+  return Number(tempInCelsius.toFixed(1));
 };
 
 const convertToFahrenheit = function() {
